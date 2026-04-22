@@ -291,6 +291,12 @@ background-size: cover;
 
 margin-top: 20%;
     min-height: 90vh;
+ gap: 5%;
+}
+#result{
+
+     height: 50px;
+    width: 200px;
 
 }
 
