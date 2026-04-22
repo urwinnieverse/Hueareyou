@@ -289,8 +289,9 @@ background-size: cover;
 }
 #page1 , #page2{
 padding-top:7%;
-margin-top: 40%;
-    min-height: 75vh;
+margin-top: 50%;
+width:100%
+aspect-ratio: 2/3;    
  gap: 5%;
 }
 #result{
