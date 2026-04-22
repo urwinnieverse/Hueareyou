@@ -288,7 +288,7 @@ background-size: cover;
 
 }
 #page1 , #page2{
-
+padding-top:7%;
 margin-top: 40%;
     min-height: 80vh;
  gap: 5%;
