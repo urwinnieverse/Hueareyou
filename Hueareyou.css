@@ -289,8 +289,8 @@ background-size: cover;
 }
 #page1 , #page2{
 
-margin-top: 20%;
-    min-height: 90vh;
+margin-top: 40%;
+    min-height: 80vh;
  gap: 5%;
 }
 #result{
