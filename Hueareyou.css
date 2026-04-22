@@ -1,0 +1,334 @@
+body {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background: fixed;
+    background-image: url(desk.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#app{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*page one*/
+
+#page1 {
+    
+    display: flex;
+    background-image: url(page2.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+     width: 90%;  
+    max-width: 500px;  
+    aspect-ratio: 3 / 4;
+    flex-direction: column;
+   justify-content: flex-start;
+    align-items: center;
+    margin-top: 7%;
+    padding-top: 3%;
+}
+
+label {
+    font-family: "Gochi Hand";
+   font-size: 24px;
+}
+
+label:hover {
+    cursor: text;
+}
+
+#inputs {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: space-evenly;
+    gap: 2%;
+    align-items:start;
+    padding-left: 25%;
+
+}
+
+input[type='text'] {
+
+    width: 120px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #454545;
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    font-family: "Gochi Hand";
+}
+
+
+.input {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#result {
+    border: 3px solid black;
+    border-radius: 60px;
+    color: black;
+    background-color: white;
+    height: 60px;
+    width: 240px;
+    font-family: "Gochi Hand";
+    font-weight: 600;
+    font-size: 24px;
+}
+#result:hover{
+
+    cursor: pointer;
+
+}
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+
+/*page two */
+
+#page2{
+    display: none;
+    background-image: url(page2.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+     width: 90%;  
+    max-width: 500px; 
+    height: auto; 
+    aspect-ratio: 3 / 4;
+    flex-direction: column;
+   justify-content: flex-start;
+    align-items: center;
+    margin-top: 7%;
+    padding-top: 1%;
+    overflow: hidden;
+}
+#up{
+
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+
+}
+
+#sunn{
+
+     align-self: flex-end;
+      margin-left: 5%;
+}
+
+#colourinfo{
+
+       display: flex;
+       flex-direction: row;
+       align-items:center;
+       align-self: flex-start;
+       justify-content:left;
+       padding-left: 15%;
+}
+
+#colourresult{
+
+   display: flex;
+   flex-direction: column; 
+   justify-content: center;
+   align-items: space-between;
+       font-size: 24px;
+}
+
+#colourblock {
+    display: flex;
+    width: 75%;
+    height: 75%;
+}
+
+#colourdetails{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 75%;
+
+}
+
+.values{
+
+    font-family: "Gochi Hand";
+    font-size: 24px;
+    text-wrap: wrap;
+
+}
+
+#divider{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 25%;
+    gap: 1%;
+    margin-top: -5%;
+    margin-bottom: -5%;
+
+}
+
+#palette{
+    display : flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 15% ;
+    padding-right: 15% ;
+}
+#head{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+
+#sparklee{
+
+    position: absolute;
+    left: 10%;
+
+}
+h3{
+
+    font-family: "Gochi Hand";
+    align-self: center;
+    justify-self: center;
+    font-size: 1.7rem;
+
+}
+
+.pvalues{
+
+    font-size: 18px;
+    text-wrap: nowrap;
+    letter-spacing: 1px;
+
+}
+#colours{
+        display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-left: 7%;
+    width: 90%;
+
+}
+.pcs{
+    display : flex;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boxes{
+
+width: 100%;
+height: auto;    
+margin-bottom: 2%;
+
+
+}
+
+#sun path, #sparkle path{
+    fill: inherit;
+}
+
+@media (max-width: 600px) {
+    
+body{
+width: 100%;
+height: 100%;
+background-size: cover;
+
+}
+#page1 , #page2{
+
+margin-top: 40%;
+
+}
+
+.values{
+    font-size: 20px;
+}
+
+.pvalues{
+    font-size: 14px;
+}
+
+#colourblock {
+    display: flex;
+    width: 65%;
+    height: 65%;
+}
+
+#colourinfo{
+padding-left: 5%;
+}
+
+.boxes{
+
+   margin-bottom: 5%; 
+}
+
+h3{
+
+  font-size: 1.3rem;  
+}
+
+
+
+
+
+
+
+
+
+
+
+}
